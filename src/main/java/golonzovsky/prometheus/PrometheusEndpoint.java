@@ -27,11 +27,16 @@ class PrometheusEndpoint extends AbstractEndpoint<String> {
     @Override
     public String invoke() {
         Writer writer = new StringWriter();
+        writeRegistryMetrics(writer);
+        return writer.toString();
+    }
+
+    private void writeRegistryMetrics(Writer writer) {
         try {
             TextFormat.write004(writer, registry.metricFamilySamples());
         } catch (IOException e) {
-            log.error("error writing prometheus metrics to endpoint");
+            log.error("error serializing prometheus metrics to endpoint response");
+            throw new IllegalStateException("error writing prometheus metrics to endpoint", e);
         }
-        return writer.toString();
     }
 }

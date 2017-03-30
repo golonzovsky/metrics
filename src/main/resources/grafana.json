@@ -32,14 +32,13 @@
   "annotations": {
     "list": []
   },
-  "editMode": false,
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
   "hideControls": false,
   "id": null,
   "links": [],
-  "refresh": false,
+  "refresh": "5s",
   "rows": [
     {
       "collapse": false,
@@ -62,6 +61,7 @@
           },
           "lines": true,
           "linewidth": 1,
+          "links": [],
           "nullPointMode": "null",
           "percentage": false,
           "pointradius": 5,
@@ -103,7 +103,7 @@
           "thresholds": [],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Panel Title",
+          "title": "response time",
           "tooltip": {
             "shared": true,
             "sort": 0,
@@ -201,7 +201,7 @@
           "thresholds": [],
           "timeFrom": null,
           "timeShift": null,
-          "title": "response times",
+          "title": "request count per minute",
           "tooltip": {
             "shared": true,
             "sort": 0,
@@ -216,7 +216,7 @@
           },
           "yaxes": [
             {
-              "format": "s",
+              "format": "none",
               "label": null,
               "logBase": 1,
               "max": null,
@@ -249,8 +249,8 @@
     "list": []
   },
   "time": {
-    "from": "2017-03-30T14:57:01.201Z",
-    "to": "2017-03-30T15:07:45.484Z"
+    "from": "now-15m",
+    "to": "now"
   },
   "timepicker": {
     "refresh_intervals": [

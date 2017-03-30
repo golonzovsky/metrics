@@ -1,0 +1,19 @@
+= Spring Boot metrics to Prometheus and Grafana
+
+
+== Links
+http://docs.grafana.org/features/datasources/prometheus/
+
+https://prometheus.io/docs/querying/basics/
+https://prometheus.io/docs/querying/examples/
+
+
+https://github.com/spring-projects/spring-boot/issues/8130
+https://github.com/prometheus/client_java/issues/130
+
+https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#production-ready-metric-writers
+
+https://raymondhlee.wordpress.com/2016/09/24/monitoring-spring-boot-applications-with-prometheus/
+http://blog.monkey.codes/actuator-and-prometheus/
+
+http://metrics.dropwizard.io/3.2.2/getting-started.html

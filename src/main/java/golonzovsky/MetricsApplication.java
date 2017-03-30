@@ -1,5 +1,8 @@
 package golonzovsky;
 
+import java.security.SecureRandom;
+import java.util.Random;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,16 +24,20 @@ public class MetricsApplication {
 @RestController
 class RestEndpoints {
 
+    private Random random = new SecureRandom();
+
     @GetMapping("one")
     String one() throws InterruptedException {
-        Thread.sleep(1000);
-        return "one";
+        int millis = random.nextInt(1000);
+        Thread.sleep(millis);
+        return String.valueOf(millis);
     }
 
     @GetMapping("half")
     String half() throws InterruptedException {
-        Thread.sleep(500);
-        return "half";
+        int millis = random.nextInt(500);
+        Thread.sleep(millis);
+        return String.valueOf(millis);
     }
 
     @GetMapping("instant")

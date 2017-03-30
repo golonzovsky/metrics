@@ -17,3 +17,6 @@ https://raymondhlee.wordpress.com/2016/09/24/monitoring-spring-boot-applications
 http://blog.monkey.codes/actuator-and-prometheus/
 
 http://metrics.dropwizard.io/3.2.2/getting-started.html
+https://github.com/ryantenney/metrics-spring
+https://github.com/dropwizard/metrics/blob/master/docs/source/manual/third-party.rst
+https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-metrics.html#production-ready-dropwizard-metrics

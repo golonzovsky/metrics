@@ -34,11 +34,11 @@ class SpringConfiguringClass extends MetricsConfigurerAdapter {
 
     @Bean
     DropwizardMetricServices dropwizardMetricServices(MetricRegistry metricRegistry,
-                                                      ObjectProvider<ReservoirFactory> resFactoryProvider)  {
-        return new DropwizardMetricServices(metricRegistry, resFactoryProvider.getIfAvailable()){
+                                                      ObjectProvider<ReservoirFactory> resFactoryProvider) {
+        return new DropwizardMetricServices(metricRegistry, resFactoryProvider.getIfAvailable()) {
             @Override
             public void submit(String name, double value) {
-                if (name.startsWith("response.")){
+                if (name.startsWith("response.")) {
                     super.submit("timer." + name, value);
                 } else {
                     super.submit(name, value);

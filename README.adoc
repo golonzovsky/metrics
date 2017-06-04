@@ -1,5 +1,9 @@
-= Spring Boot metrics to Prometheus and Grafana
+= Spring Boot metrics to Prometheus and Grafana image:https://travis-ci.org/golonzovsky/metrics.svg?branch=master[Build Status]
 
+== todo
+- [x] prometheus-simpleclient
+- [x] dropwizard metrics with custom prometheus endpoint
+- [ ] spring-metrics (https://github.com/spring-projects/spring-metrics)
 
 == Links
 http://docs.grafana.org/features/datasources/prometheus/

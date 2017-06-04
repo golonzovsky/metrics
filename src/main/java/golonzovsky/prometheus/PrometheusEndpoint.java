@@ -9,11 +9,7 @@ import io.prometheus.client.exporter.common.TextFormat;
 import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.boot.actuate.endpoint.AbstractEndpoint;
-import org.springframework.stereotype.Component;
 
-/**
- * Created by jzietsman on 1/28/16.
- */
 @Slf4j
 class PrometheusEndpoint extends AbstractEndpoint<String> {
 

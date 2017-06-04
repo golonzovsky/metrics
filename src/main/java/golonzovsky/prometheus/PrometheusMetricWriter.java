@@ -1,10 +1,8 @@
 package golonzovsky.prometheus;
 
-import com.codahale.metrics.MetricRegistry;
 import io.prometheus.client.CollectorRegistry;
 import io.prometheus.client.Counter;
 import io.prometheus.client.Gauge;
-
 import org.springframework.boot.actuate.metrics.Metric;
 import org.springframework.boot.actuate.metrics.writer.Delta;
 import org.springframework.boot.actuate.metrics.writer.MetricWriter;
@@ -12,7 +10,6 @@ import org.springframework.boot.actuate.metrics.writer.MetricWriter;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
-/** Created by o.golonzovskyi on 30/03/2017. */
 public class PrometheusMetricWriter implements MetricWriter {
 
     private CollectorRegistry registry;

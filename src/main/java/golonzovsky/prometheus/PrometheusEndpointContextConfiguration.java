@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Bean;
 
 import io.prometheus.client.CollectorRegistry;
 
-/** Created by o.golonzovskyi on 30/03/2017. */
 @ManagementContextConfiguration
 public class PrometheusEndpointContextConfiguration {
 

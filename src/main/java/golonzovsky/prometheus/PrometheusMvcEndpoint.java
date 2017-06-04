@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import io.prometheus.client.exporter.common.TextFormat;
 
-/** Created by o.golonzovskyi on 30/03/2017. */
 public class PrometheusMvcEndpoint extends AbstractEndpointMvcAdapter<PrometheusEndpoint> {
 
     PrometheusMvcEndpoint(PrometheusEndpoint delegate) {
